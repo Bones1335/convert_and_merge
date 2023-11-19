@@ -2,6 +2,7 @@ import os, sys
 from pypdf import PdfWriter
 
 def merge():
+    mergedFilename = sys.argv[1]
     merger = PdfWriter()
 
     workingDirectory = input('Input desired directory to merge: ')
@@ -11,5 +12,6 @@ def merge():
         merger.append(pdf)
 
 
-    merger.write(sys.argv[1])
+    merger.write(mergedFilename)
     merger.close()
+    print(f'{mergedFilename} created at {workingDirectory}')
