@@ -6,8 +6,7 @@ This program converts and merges files from the desired directory into a single 
 
 ## Functionality
 
-- run:
-     `python main.py [merged_filename]`
+- run: `python main.py [merged_filename]`
 
 - When prompted, input the desired directory you would like to merge into a single file.
 
