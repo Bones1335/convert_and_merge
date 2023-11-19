@@ -1,17 +1,18 @@
-import os, sys
+import os
+import sys
 from pypdf import PdfWriter
 
 def merge():
-    mergedFilename = sys.argv[1]
+    merged_filename = sys.argv[1]
     merger = PdfWriter()
 
-    workingDirectory = input('Input desired directory to merge: ')
-    os.chdir(workingDirectory)
+    working_directory = input('Input desired directory to merge: ')
+    os.chdir(working_directory)
 
-    for pdf in os.listdir(workingDirectory):
+    for pdf in os.listdir(working_directory):
         merger.append(pdf)
 
 
-    merger.write(mergedFilename)
+    merger.write(merged_filename)
     merger.close()
-    print(f'{mergedFilename} created at {workingDirectory}')
+    print(f'{merged_filename} created at {working_directory}')
