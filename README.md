@@ -13,5 +13,5 @@ This program converts and merges files from the desired directory into a single 
 - File is saved to the working directory.
 
 ## TODO:
-    - Add file conversion so images become pdfs
-    - Move merged files to a 'to_be_deleted' directory leaving behind only `the merged pdf file
+- Add file conversion so images become pdfs
+- Move merged files to a 'to_be_deleted' directory leaving behind only `the merged pdf file
