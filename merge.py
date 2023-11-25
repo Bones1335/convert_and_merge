@@ -13,4 +13,4 @@ def merge(working_directory):
 
     merger.write(merged_filename)
     merger.close()
-    print(f'{merged_filename} created at {working_directory}')
+    print(f'Successfully created {merged_filename} located at {working_directory}')
