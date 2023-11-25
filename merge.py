@@ -7,7 +7,8 @@ def merge(working_directory):
     merger = PdfWriter()
 
     for pdf in os.listdir(working_directory):
-        merger.append(pdf)
+        if pdf.endswith('.pdf'):
+            merger.append(pdf)
 
 
     merger.write(merged_filename)
