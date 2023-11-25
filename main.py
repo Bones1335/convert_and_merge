@@ -1,4 +1,5 @@
 import os
+import clean_up
 import convert
 import merge
 
@@ -8,6 +9,7 @@ def main():
     
     convert.convert(working_directory)
     merge.merge(working_directory)
+    clean_up.clean_up(working_directory)
 
 if __name__ == '__main__':
     main()
