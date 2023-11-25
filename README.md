@@ -4,6 +4,8 @@ This program converts and merges files from the desired directory into a single 
 
 ## Functionality
 
+***Note: Before running the program, make sure the files in the directory you want to merge are named in such a way that they will merge in the user's desired order.***
+
 - run: `python main.py [merged_filename]`
 
 - When prompted, input the desired directory you would like to merge into a single file. Make sure to write the entire directory path.
